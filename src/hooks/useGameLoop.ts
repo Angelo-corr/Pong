@@ -1,0 +1,1 @@
+// Custom hook for requestAnimationFrame loop logic.

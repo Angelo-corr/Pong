@@ -1,0 +1,1 @@
+// Define TypeScript interfaces for Ball, Paddle, Position, Velocity, etc.
