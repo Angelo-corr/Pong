@@ -1,5 +1,7 @@
 import React, { useRef, useEffect } from 'react';
 
+let height = 16
+
 const RightPaddle: React.FC = () => {
     const position = useRef(42);
     const keysPressed = useRef<{ [key: string]: boolean }>({});
@@ -56,7 +58,7 @@ const RightPaddle: React.FC = () => {
             ref={paddleRef}
             style={{
                 borderLeft: '6px solid white',
-                height: '16vh',
+                height: `${height}vh`,
                 position: 'absolute',
                 right: '5%',
                 top: `${position}%`

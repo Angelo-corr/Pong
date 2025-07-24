@@ -57,4 +57,13 @@ export type Vector = {
       ball.velocity.y = ball.speed * -Math.sin(bounceAngle);
     }
   }
-  
+
+  export function spawnBall(canvasWidth: number, canvasHeight: number): Ball {
+    return {
+      position: { x: canvasWidth / 2, y: canvasHeight / 2 },
+      velocity: { x: 5, y: 3 }, 
+      speed: 5,
+      radius: 10
+    };
+  }
+
